@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roaa's World</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="password-modal" id="passwordModal">
+    <div class="password-content">
+      <h2>Enter the secret code</h2>
+      <input type="password" class="password-input" id="passwordInput" placeholder="Zeyad's Nickname" />
+      <button class="submit-btn" id="submitPassword">Enter</button>
+    </div>
+  </div>
+
+  <div class="welcome-screen" id="welcomeScreen">
+    <h1 class="welcome-message">Welcome Roaa , enjoy your stay</h1>
+  </div>
+
+  <div class="container" id="mainContent" style="display: none;">
+    <div class="tabs">
+      <button class="tab active" data-tab="love-letter"><span>❤️</span> Zeyad's Letter</button>
+      <button class="tab" data-tab="video"><span>📺</span> videos</button>
+      <button class="tab" data-tab="notes"><span>📝</span> Notes</button>
+      <button class="tab" data-tab="gallery"><span>🌷</span> Gallery</button>
+      <button class="tab" data-tab="you"><span>🤞</span> You</button>
+    </div>
+
+    <div class="content-area">
+      <div class="tab-content active" id="love-letter">
+        <h2>My Dearest</h2>
+        <div class="letter" id="loveLetter">
+          <div class="letter-header">
+            <h3>Thank you letter</h3>
+            <span>👇 Click to open</span>
+          </div>
+          <div class="letter-content">
+            <p>, رؤى</p>
+
+            <p>. كل يوم معك أشبه بحلم جميل لا أريد الاستيقاظ منه. ابتسامتك تُنير أحلى أيامي، وضحكتك هي لحني المفضل </p>
+            <p>. أُقدّر كل لحظة نقضيها معًا، من نكاتنا المرحة إلى أحاديثنا العميقة تحت النجوم. لقد أريتني معنى السعادة الحقيقية، وسأظل ممتنًا لك إلى الأبد</p>
+            <p>زياد</p>
+          </div>
+        </div>
+
+              <div class="letter" id="loveLetter">
+          <div class="letter-header">
+            <h3>A Important Letter For You</h3>
+            <span>👇 Click to open</span>
+          </div>
+          <div class="letter-content">
+            <p>, رؤى</p>
+            <p> ... تذكري</p>
+            <p> انتِ لستِ لوحدك</p>
+            <p> الله معك ثم انا</p>
+            <p> لا تقلقي سوف يمر كل شيء بخير ان شاء الله</p>
+            <p> تفائلي واحسني الظن بربك</p>
+            <p> انتي قوية وقادرة على تخطي كل شيء بإذن الله</p>
+            <p>لديك وميض خاص ... سوف اكون حارسََا له بإذن الله</p>
+            <p> لا تيأسي ابدا</p>
+            <p> انا دائما هنا من اجلك</p>
+            <p> أنا معك إلى الأبد ولن اتركك بإذن الله</p>
+             <p>مهما حدث لن تعرفين قيمتك عندي</p>
+            <p>زياد</p>
+          </div>
+        </div>
+      </div>
+
+ <div class="tab-content" id="video">
+  <h2>Songs that remind me of you</h2>
+
+  <!-- زر إظهار/إخفاء قائمة التشغيل -->
+  <div class="letter playlist-toggle" id="togglePlaylist">
+    <div class="letter-header">
+      <h3>🎥 waguri kaokuro And Rintaro-kn</h3>
+      <span>👇 Click to open</span>
+    </div>
+  </div>
+
+  <!-- قائمة التشغيل (مخفية بالبداية) -->
+  <div class="play-list" id="playlist" style="display: none;">
+    <div class="video"><a href="https://witanime.world/episode/kaoru-hana-wa-rin-to-saku-%d8%a7%d9%84%d8%ad%d9%84%d9%82%d8%a9-1/" target="_blank">📽 Episode 1</a></div>
+    <div class="video"><a href="https://witanime.world/episode/kaoru-hana-wa-rin-to-saku-%d8%a7%d9%84%d8%ad%d9%84%d9%82%d8%a9-2/" target="_blank">📽 Episode 2</a></div>
+    <div class="video"><a href="https://witanime.world/episode/kaoru-hana-wa-rin-to-saku-%d8%a7%d9%84%d8%ad%d9%84%d9%82%d8%a9-3/" target="_blank">📽 Episode 3</a></div>
+    <div class="video"><a href="https://witanime.world/episode/kaoru-hana-wa-rin-to-saku-%d8%a7%d9%84%d8%ad%d9%84%d9%82%d8%a9-4/" target="_blank">📽 Episode 4</a></div>
+    <div class="video"><a href="https://witanime.world/episode/kaoru-hana-wa-rin-to-saku-%d8%a7%d9%84%d8%ad%d9%84%d9%82%d8%a9-5/" target="_blank">📽 Episode 5</a></div>
+    <div class="video"><a href="https://witanime.world/episode/kaoru-hana-wa-rin-to-saku-%d8%a7%d9%84%d8%ad%d9%84%d9%82%d8%a9-6/" target="_blank">📽 Episode 6</a></div>
+    <div class="video"><a href="https://witanime.world/episode/kaoru-hana-wa-rin-to-saku-%d8%a7%d9%84%d8%ad%d9%84%d9%82%d8%a9-7/" target="_blank">📽 Episode 7</a></div>
+    <div class="video"><a href="https://witanime.world/episode/kaoru-hana-wa-rin-to-saku-%d8%a7%d9%84%d8%ad%d9%84%d9%82%d8%a9-8/" target="_blank">📽 Episode 8</a></div>
+    <div class="video"><a href="https://witanime.world/episode/kaoru-hana-wa-rin-to-saku-%d8%a7%d9%84%d8%ad%d9%84%d9%82%d8%a9-9/" target="_blank">📽 Episode 9</a></div>
+    <div class="video"><a href="https://witanime.world/episode/kaoru-hana-wa-rin-to-saku-%d8%a7%d9%84%d8%ad%d9%84%d9%82%d8%a9-10/" target="_blank">📽 Episode 10</a></div>
+    <div class="video"><a href="https://witanime.world/episode/kaoru-hana-wa-rin-to-saku-%d8%a7%d9%84%d8%ad%d9%84%d9%82%d8%a9-11/" target="_blank">📽 Episode 11</a></div>
+    <div class="video"><a href="https://witanime.world/episode/kaoru-hana-wa-rin-to-saku-%d8%a7%d9%84%d8%ad%d9%84%d9%82%d8%a9-12/" target="_blank">📽 Episode 12</a></div>
+    <div class="video"><a href="https://witanime.world/episode/kaoru-hana-wa-rin-to-saku-%d8%a7%d9%84%d8%ad%d9%84%d9%82%d8%a9-13/" target="_blank">📽 Episode 13</a></div>
+  </div>
+
+  <!-- 🎞️ قسم توم وجيري -->
+  <div class="letter tomandjerry-toggle" id="toggleTom">
+    <div class="letter-header">
+      <h3>🐭 Tom & Jerry Classics</h3>
+      <span>👇 Click to open</span>
+    </div>
+  </div>
+
+  <div class="tomandjerry-section" id="tomandjerry" style="display: none;">
+    <div class="play-list">
+      <div class="video" data-embed="https://www.youtube.com/embed/j-88jrkyszQ">🎥 Episode 1</div>
+      <div class="video" data-embed="https://www.youtube.com/embed/qT8H2Zfv8Lo">🎥 Episode 2</div>
+      <div class="video" data-embed="https://www.youtube.com/embed/lToc0H59ZqY">🎥 Episode 3</div>
+      <div class="video" data-embed="https://www.youtube.com/embed/y6iLQZyYZvE">🎥 Episode 4</div>
+      <div class="video" data-embed="https://www.youtube.com/embed/1qYvEYwZdrE">🎥 Episode 5</div>
+      <div class="video" data-embed="https://www.youtube.com/embed/zHD8kY3A3vM">🎥 Episode 6</div>
+      <div class="video" data-embed="https://www.youtube.com/embed/mUdfCKtVWMo">🎥 Episode 7</div>
+      <div class="video" data-embed="https://www.youtube.com/embed/oIKhH3ApuXU">🎥 Episode 8</div>
+      <div class="video" data-embed="https://www.youtube.com/embed/bEtbKhYj0BM">🎥 Episode 9</div>
+      <div class="video" data-embed="https://www.youtube.com/embed/pEl3-0GHyoQ">🎥 Episode 10</div>
+    </div>
+
+    <div class="main-video">
+      <h3>🎞️ Now Playing</h3>
+      <iframe id="playerTom" width="100%" height="400"
+        src="https://www.youtube.com/embed/NAjaOUbfCDs"
+        title="Tom & Jerry Classic"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+</div> <!-- ✅ هذا السطر يغلق تبويب الفيديو بشكل صحيح -->
+
+
+<!-- ====== باقي التبويبات ====== -->
+
+<div class="tab-content" id="notes">
+  <h2>Some reminders</h2>
+  <div class="note"><p>Take care always of yourself</p></div>
+  <div class="note"><p>Eat on time</p></div>
+  <div class="note"><p>Study well</p></div>
+  <div class="note"><p>Read a Quran</p></div>
+  <div class="note"><p>Sleep well</p></div>
+  <div class="note"><p>Don't Give Up</p></div>
+  <div class="note"><p>Always Smile</p></div>
+  <div class="note"><p>You're always Moon</p></div>
+  <div class="note"><p>And Don't Forget Me</p></div>
+</div>
+
+<div class="tab-content" id="gallery">
+  <h2>Flowers for you</h2>
+  <div class="gallery">
+    <div class="gallery-item"><img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1eaad721-3375-4d97-a5fa-cbf8a87d60b8.png" alt="pink roses" /></div>
+    <div class="gallery-item"><img src="https://i.pinimg.com/736x/68/b5/3a/68b53a1298422165b8d4a7cdda14bf37.jpg" alt="peonies" /></div>
+    <div class="gallery-item"><img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e9890063-b481-46f6-97a1-9fc753211e19.png" alt="peonies" /></div>
+    <div class="gallery-item"><img src="https://i.pinimg.com/736x/71/d0/31/71d031723f85550fda0590fe78694604.jpg" alt="peonies" /></div>
+    <div class="gallery-item"><img src="https://i.pinimg.com/736x/f9/3c/54/f93c541dc53c733afeebbcb8b83b4346.jpg" alt="peonies" /></div>
+    <div class="gallery-item"><img src="https://i.pinimg.com/736x/57/03/6b/57036bd208563a11b5a593fc53b3af98.jpg" alt="peonies" /></div>
+  </div>
+</div>
+
+<div class="tab-content" id="you">
+  <h2>This is you</h2>
+  <div class="gallery">
+    <div class="gallery-item"><img src="https://i.pinimg.com/736x/5e/b1/19/5eb119cdd5af31c7695fbcd811c1a0b8.jpg" alt="pink roses" /></div>
+    <div class="gallery-item"><img src="https://i.pinimg.com/736x/1f/f5/e8/1ff5e861c398ccb410d76f57acbedf5b.jpg" alt="peonies" /></div>
+    <div class="gallery-item"><img src="https://i.pinimg.com/736x/32/c0/95/32c095d137025d309a26eedd8d3507ba.jpg" alt="peonies" /></div>
+    <div class="gallery-item"><img src="https://i.pinimg.com/736x/7a/d7/7d/7ad77d57ceeba14cae20e4653763828c.jpg" alt="peonies" /></div>
+    <div class="gallery-item"><img src="https://i.pinimg.com/736x/6f/55/c0/6f55c03771c42a94245d488ae33ac37d.jpg" alt="peonies" /></div>
+    <div class="gallery-item"><img src="https://i.pinimg.com/736x/96/62/20/96622004eb063207c460f1d8447e07b9.jpg" alt="peonies" /></div>
+  </div>
+</div>
+
+
+  <div class="heart" style="top: 10%; left: 5%;">❤️</div>
+  <div class="heart" style="top: 20%; right: 10%;">❤️</div>
+  <div class="heart" style="bottom: 15%; left: 15%;">❤️</div>
+  <div class="teddy-bear" style="top: 30%; left: 10%;">🧸</div>
+  <div class="teddy-bear" style="bottom: 10%; right: 5%;">🧸</div>
+
+  <script>
+document.addEventListener('DOMContentLoaded', () => {
+
+  // ==========================
+  // 🔐 نظام كلمة السر
+  // ==========================
+  const passwordModal = document.getElementById('passwordModal');
+  const welcomeScreen = document.getElementById('welcomeScreen');
+  const mainContent = document.getElementById('mainContent');
+  const passwordInput = document.getElementById('passwordInput');
+  const submitPassword = document.getElementById('submitPassword');
+
+  submitPassword.addEventListener('click', () => {
+    if (passwordInput.value.toLowerCase() === 'زبادي') {
+      passwordModal.style.opacity = '0';
+      setTimeout(() => {
+        passwordModal.style.display = 'none';
+        welcomeScreen.style.display = 'flex';
+        setTimeout(() => {
+          welcomeScreen.style.opacity = '0';
+          setTimeout(() => {
+            welcomeScreen.style.display = 'none';
+            mainContent.style.display = 'block';
+          }, 800);
+        }, 2500);
+      }, 500);
+    } else {
+      passwordInput.value = '';
+      passwordInput.placeholder = 'Try again, Roaa...';
+      passwordInput.style.borderColor = '#ff4d4d';
+      setTimeout(() => {
+        passwordInput.style.borderColor = '#ffb7c5';
+        passwordInput.placeholder = 'Our special word...';
+      }, 1500);
+    }
+  });
+
+  passwordInput.addEventListener('keypress', e => {
+    if (e.key === 'Enter') submitPassword.click();
+  });
+
+  // ==========================
+  // 📑 التبويبات (Tabs)
+  // ==========================
+  const tabs = document.querySelectorAll('.tab');
+  const tabContents = document.querySelectorAll('.tab-content');
+
+  // أول تبويب يظهر مبدئيًا
+  if (tabContents.length > 0) tabContents[0].classList.add('active');
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', function() {
+      const targetTab = this.dataset.tab;
+
+      tabs.forEach(t => t.classList.remove('active'));
+      this.classList.add('active');
+
+      tabContents.forEach(content => {
+        if (content.id === targetTab) {
+          content.classList.add('active');
+        } else {
+          content.classList.remove('active');
+        }
+      });
+    });
+  });
+
+  // ==========================
+  // 💌 فتح / إغلاق الرسائل و الـ playlist
+  // ==========================
+  const letters = document.querySelectorAll('.letter');
+  letters.forEach(letter => {
+    letter.addEventListener('click', function() {
+      this.classList.toggle('expanded');
+    });
+  });
+
+  const playlistToggle = document.getElementById('togglePlaylist');
+  const playlistBox = document.getElementById('playlist');
+  if (playlistToggle && playlistBox) {
+    let playlistOpen = false;
+    playlistToggle.addEventListener('click', () => {
+      playlistOpen = !playlistOpen;
+      playlistBox.style.display = playlistOpen ? 'grid' : 'none';
+      playlistToggle.querySelector('span').textContent = playlistOpen ? '☝ Click to close' : '👇 Click to open';
+    });
+  }
+
+  // ==========================
+  // 🐭 Tom & Jerry
+  // ==========================
+  const toggleTom = document.getElementById('toggleTom');
+  const tomSection = document.getElementById('tomandjerry');
+  if (toggleTom && tomSection) {
+    let tomOpen = false;
+    toggleTom.addEventListener('click', () => {
+      tomOpen = !tomOpen;
+      tomSection.style.display = tomOpen ? 'block' : 'none';
+      toggleTom.querySelector('span').textContent = tomOpen ? '☝ Click to close' : '👇 Click to open';
+    });
+  }
+
+  // تبديل الفيديوهات
+  document.querySelectorAll('.tomandjerry-section .video').forEach(item => {
+    item.addEventListener('click', () => {
+      const embed = item.dataset.embed;
+      const player = document.getElementById('playerTom');
+      player.src = embed + '?autoplay=1';
+    });
+  });
+
+  // ==========================
+  // ❤️ عناصر عائمة (قلوب + دببة)
+  // ==========================
+  function addFloatingElements() {
+    for (let i = 0; i < 15; i++) {
+      const heart = document.createElement('div');
+      heart.classList.add('heart');
+      heart.innerHTML = '❤️';
+      heart.style.left = Math.random() * 100 + '%';
+      heart.style.top = Math.random() * 100 + '%';
+      heart.style.animationDelay = Math.random() * 5 + 's';
+      document.body.appendChild(heart);
+    }
+    for (let i = 0; i < 5; i++) {
+      const teddy = document.createElement('div');
+      teddy.classList.add('teddy-bear');
+      teddy.innerHTML = '🧸';
+      teddy.style.left = Math.random() * 100 + '%';
+      teddy.style.top = Math.random() * 100 + '%';
+      teddy.style.animationDelay = Math.random() * 5 + 's';
+      document.body.appendChild(teddy);
+    }
+  }
+
+  addFloatingElements();
+
+});
+</script>
+
+</body>
+</html>
