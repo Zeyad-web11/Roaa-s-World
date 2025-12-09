@@ -229,6 +229,21 @@ body {
   font-size: 16px;
 }
 
+@media (max-width: 767px) {
+  .letter-header h3 span {
+    right: -48%;
+    bottom: -19px;
+  }
+  
+}
+
+
+@media (min-width: 768 ) {
+  .letter-header h3 span {
+    right: -185%;
+  }
+  
+}
 
 .video {
     background: #f8e8ee;
@@ -462,6 +477,14 @@ body {
   background-color: black;
     position: relative;
     left: 30%;
+}
+
+@media (max-width: 768px) {
+  .audio {
+    left: 0;
+    width: 100%;
+  }
+  
 }
 
 .write2 {
