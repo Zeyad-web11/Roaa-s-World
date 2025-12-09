@@ -15,6 +15,7 @@ body {
     color: #8a1c4a;
 }
 
+
 /* Password Modal */
 .password-modal {
     position: fixed;
@@ -194,6 +195,7 @@ body {
     font-family: 'Dancing Script', cursive;
     font-size: 28px;
     color: #d81b60;
+    position: relative;
 }
 
 .letter-content {
@@ -213,7 +215,21 @@ body {
     max-height: 1000px;
 }
 
-/* Music Tab */
+.letter-header h3 span {
+  position: absolute;
+  right: -250%;
+}
+
+.letter-header h3 span::before {
+  content: "New";
+  background: #d81b60;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 16px;
+}
+
+
 .video {
     background: #f8e8ee;
     padding: 15px;
@@ -428,8 +444,36 @@ body {
 }
 
 
+.tab-content .meme {
+    font-family: 'Dancing Script', cursive;
+    font-size: 28px;
+    color: #d81b60;
+    text-align: center;
+    margin-top: 50px;
 
+}
 
+.write {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.audio {
+  background-color: black;
+    position: relative;
+    left: 30%;
+}
+
+.write2 {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1.6;
+  text-align: center;
+}
+
+.top {
+  margin: 10px 0 0 0;
+}
 /* Decorative Elements */
 .heart, .teddy-bear {
     position: absolute;
